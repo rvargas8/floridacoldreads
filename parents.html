@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parent Guide for Florida Cold Reads - Learn how to help your child practice reading comprehension at home.">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta name="robots" content="index, follow">
+    
+    <title>For Parents & Guardians - Florida Cold Reads</title>
+    <meta name="description" content="Parent guide for Florida Cold Reads. Learn how to help your child practice reading comprehension at home with B.E.S.T. Standards aligned passages.">
+    <link rel="canonical" href="https://floridacoldreads.com/parents.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://floridacoldreads.com/parents.html">
+    <meta property="og:title" content="For Parents & Guardians - Florida Cold Reads">
+    <meta property="og:description" content="Complete guide for parents to help their children practice reading comprehension at home.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="For Parents & Guardians - Florida Cold Reads">
+    <meta name="twitter:description" content="Complete guide for parents to help their children practice reading comprehension at home.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Florida Cold Reads Colors - More Distinguishable */
+            --illini-orange: #FF6600;
+            --illini-blue: #0066CC;
+            --illini-orange-light: #FF8833;
+            --illini-blue-light: #3388DD;
+            --illini-orange-dark: #CC5500;
+            --illini-blue-dark: #004499;
+            
+            /* Neutral colors */
+            --navy: #1A1A2E;
+            --warm-white: #FFFEF7;
+            --light-gray: #F5F5F5;
+            --text-dark: #2C3E50;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #FFF5F0 0%, #E8F0FF 100%);
+            padding: 0;
+            line-height: 1.5;
+            font-size: 16px;
+            color: var(--text-dark);
+            min-height: 100vh;
+            word-spacing: 0.05em;
+            letter-spacing: 0.01em;
+            scroll-behavior: smooth;
+        }
+
+        /* Top Navigation Bar */
+        .top-nav {
+            background: var(--illini-orange);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .brand-icon {
+            font-size: 2rem;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .brand-tagline {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            font-weight: 500;
+            margin-top: -0.25rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .nav-link.active {
+            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .container {
+            max-width: 65ch;
+            margin: 0 auto;
+            background: var(--warm-white);
+            padding: clamp(2rem, 5vw, 4rem);
+            border-radius: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid var(--illini-orange);
+        }
+
+        .header h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            color: var(--illini-orange);
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+        }
+
+        .header .subtitle {
+            font-size: 1.25rem;
+            color: var(--illini-blue);
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--illini-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            background: var(--illini-orange);
+            transform: translateY(-2px);
+        }
+
+        .parents-section {
+            background: linear-gradient(135deg, #FFF5F0 0%, #E8F0FF 100%);
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+            border-left: 6px solid var(--illini-orange);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parents-section::before {
+            content: '👨‍👩‍👧‍👦';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 4rem;
+            opacity: 0.1;
+        }
+
+        .parents-section h3 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--illini-blue);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            z-index: 1;
+            line-height: 1.3;
+        }
+
+        .parents-section p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+            max-width: 65ch;
+            color: var(--text-dark);
+        }
+
+        .parents-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .parents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .parent-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--illini-blue);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .parent-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(255, 102, 0, 0.2);
+            border-color: var(--illini-orange);
+        }
+
+        .parent-card h4 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--illini-blue);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .parent-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin-bottom: 0;
+        }
+
+        .parent-card-icon {
+            font-size: 1.5rem;
+        }
+
+        .parents-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .parents-list li {
+            padding: 1rem 0;
+            padding-left: 2.5rem;
+            position: relative;
+            font-size: 1.0625rem;
+            line-height: 1.6;
+            max-width: 60ch;
+        }
+
+        .parents-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--illini-orange);
+            font-weight: 700;
+            font-size: 1.5rem;
+            width: 2rem;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #13294B;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .footer p {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .footer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer .brand-footer {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+        }
+
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--illini-orange);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 1000;
+            font-weight: 600;
+            border-radius: 0 0 4px 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Focus Styles for Accessibility */
+        *:focus {
+            outline: 3px solid var(--illini-orange);
+            outline-offset: 2px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #13294B;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-top: 3rem;
+        }
+
+        .site-footer span {
+            color: var(--illini-orange);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+
+            .top-nav {
+                padding: 0.75rem 1rem;
+            }
+
+            .nav-content {
+                flex-wrap: wrap;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: var(--illini-blue);
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                padding: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                opacity: 0;
+                visibility: hidden;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            }
+
+            .nav-menu.active {
+                max-height: 85vh;
+                overflow-y: auto;
+                padding: 1rem;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-link {
+                justify-content: center;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .brand-text {
+                font-size: 1.25rem;
+            }
+
+            .brand-tagline {
+                display: none;
+            }
+
+            .container {
+                padding: 1.5rem;
+                border-radius: 16px;
+                margin: 1rem;
+            }
+
+            .header {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.75rem;
+            }
+
+            .header .subtitle {
+                font-size: 1.125rem;
+            }
+
+            .parents-section {
+                padding: 1.5rem;
+                margin: 2rem 0;
+            }
+
+            .parents-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .parents-section p {
+                font-size: 1rem;
+            }
+
+            .parents-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .parent-card {
+                padding: 1.25rem;
+            }
+
+            .parents-list li {
+                font-size: 1rem;
+                padding-left: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <a href="readready.html" class="brand">
+                <span class="brand-icon">📚</span>
+                <div>
+                    <div class="brand-text">Florida Cold Reads</div>
+                    <div class="brand-tagline">B.E.S.T. Standards Practice</div>
+                </div>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="readready.html#intro" class="nav-link">📖 About</a></li>
+                <li><a href="readready.html#why" class="nav-link">💡 Why Cold Reads</a></li>
+                <li><a href="readready.html#grades" class="nav-link">🎓 Choose Grade</a></li>
+                <li><a href="fast-test.html" class="nav-link">📊 FAST Test</a></li>
+                <li><a href="parents.html" class="nav-link active">👨‍👩‍👧‍👦 For Parents</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="readready.html" class="back-button">← Back to Home</a>
+
+        <div class="header">
+            <h1>For Parents & Guardians</h1>
+            <div class="subtitle">A Complete Guide to Florida Cold Reads</div>
+        </div>
+
+        <div class="parents-section">
+            <h3>👨‍👩‍👧‍👦 Welcome, Parents!</h3>
+            <p>Florida Cold Reads is designed to help your child improve their reading skills at home. Here's everything you need to know to support your child's reading practice:</p>
+            
+            <div class="parents-grid">
+                <div class="parent-card">
+                    <h4><span class="parent-card-icon">📚</span> How It Works</h4>
+                    <p>Your child selects their grade level (2nd through 5th) and chooses from 5 practice passages. Each passage includes comprehension questions that align with Florida B.E.S.T. Standards.</p>
+                </div>
+                
+                <div class="parent-card">
+                    <h4><span class="parent-card-icon">⏱️</span> Time Commitment</h4>
+                    <p>Each passage takes about 10-15 minutes to complete. We recommend practicing 2-3 times per week for best results. Consistency is more important than duration!</p>
+                </div>
+                
+                <div class="parent-card">
+                    <h4><span class="parent-card-icon">💡</span> How to Help</h4>
+                    <p>Encourage your child to read the passage carefully before answering questions. Remind them to look back at the text for evidence. Be patient and celebrate their progress!</p>
+                </div>
+                
+                <div class="parent-card">
+                    <h4><span class="parent-card-icon">📊</span> What to Expect</h4>
+                    <p>Each grade level has passages appropriate for that age. Questions test comprehension, vocabulary, and critical thinking skills your child is learning in school.</p>
+                </div>
+            </div>
+            
+            <h4 style="font-family: 'Fraunces', Georgia, serif; font-size: 1.25rem; color: var(--illini-blue); margin-top: 2rem; margin-bottom: 1rem;">Tips for Success:</h4>
+            <ul class="parents-list">
+                <li><strong>Create a Quiet Space:</strong> Set up a distraction-free reading area where your child can focus</li>
+                <li><strong>Set a Schedule:</strong> Regular practice time (consistency is key!) helps build good habits</li>
+                <li><strong>Review Together:</strong> After completing a passage, review answers together and discuss what your child learned</li>
+                <li><strong>Celebrate Effort:</strong> Focus on effort and improvement, not just perfect scores</li>
+                <li><strong>Encourage Re-reading:</strong> It's okay to read the passage twice if needed - this is a learning tool!</li>
+                <li><strong>Identify Strengths:</strong> Use this as a tool to identify areas where your child excels and where they might need extra support</li>
+                <li><strong>Stay Positive:</strong> Keep the experience positive and encouraging - reading should be enjoyable!</li>
+            </ul>
+            
+            <h4 style="font-family: 'Fraunces', Georgia, serif; font-size: 1.25rem; color: var(--illini-blue); margin-top: 2rem; margin-bottom: 1rem;">Understanding B.E.S.T. Standards:</h4>
+            <p>All passages and questions are designed to align with Florida's Benchmarks for Excellent Student Thinking (B.E.S.T.) Standards. This means your child is practicing skills that directly support what they're learning in school, including:</p>
+            <ul class="parents-list">
+                <li>Reading comprehension and understanding main ideas</li>
+                <li>Vocabulary development and word meaning</li>
+                <li>Critical thinking and analysis</li>
+                <li>Text evidence and supporting details</li>
+                <li>Making inferences and drawing conclusions</li>
+            </ul>
+            
+            <h4 style="font-family: 'Fraunces', Georgia, serif; font-size: 1.25rem; color: var(--illini-blue); margin-top: 2rem; margin-bottom: 1rem;">Grade Level Expectations:</h4>
+            <div class="parents-grid">
+                <div class="parent-card">
+                    <h4>2nd Grade</h4>
+                    <p>Focuses on basic comprehension, identifying story elements, and understanding simple vocabulary.</p>
+                </div>
+                <div class="parent-card">
+                    <h4>3rd Grade</h4>
+                    <p>Builds on comprehension skills, introduces more complex vocabulary, and begins critical thinking.</p>
+                </div>
+                <div class="parent-card">
+                    <h4>4th Grade</h4>
+                    <p>Emphasizes deeper analysis, theme identification, and more sophisticated comprehension questions.</p>
+                </div>
+                <div class="parent-card">
+                    <h4>5th Grade</h4>
+                    <p>Focuses on advanced comprehension, complex vocabulary, and analytical thinking skills.</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid rgba(255, 102, 0, 0.2); font-size: 0.9375rem; color: #555;"><strong>Questions?</strong> If you have questions about how to use Florida Cold Reads or need help supporting your child's reading practice, please contact your child's teacher. They can provide additional guidance tailored to your child's specific needs.</p>
+        </div>
+
+        <div class="footer">
+            <p class="brand-footer">Florida Cold Reads</p>
+            <p><strong>Supporting Your Child's Reading Journey! 📖</strong></p>
+            <p>Thank you for being an engaged parent in your child's education!</p>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        Made with <span>❤️</span> from Florida
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (mobileMenuToggle && navMenu) {
+            mobileMenuToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                const isActive = navMenu.classList.contains('active');
+                navMenu.classList.toggle('active');
+                this.textContent = isActive ? '☰' : '✕';
+            });
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.textContent = '☰';
+                }
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                if (!e.target.closest('.top-nav')) {
+                    navMenu.classList.remove('active');
+                    mobileMenuToggle.textContent = '☰';
+                }
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
+            }
+        });
+    </script>
+</body>
+</html>
+

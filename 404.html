@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Florida Cold Reads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --illini-orange: #FF5F00;
+            --illini-blue: #13294B;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #FFF5F0 0%, #E8F0FF 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-family: 'Fraunces', serif;
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--illini-orange);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            font-size: 2rem;
+            color: var(--illini-blue);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--illini-orange);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(255, 95, 0, 0.3);
+        }
+
+        .home-button:hover {
+            background: var(--illini-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(19, 41, 75, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1>Page Not Found</h1>
+        <p>Sorry, the page you're looking for doesn't exist. It may have been moved or deleted.</p>
+        <a href="readready.html" class="home-button">← Back to Home</a>
+    </div>
+</body>
+</html>
+
