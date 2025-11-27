@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google Analytics Test</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RZNHMY95P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9RZNHMY95P');
+    </script>
+</head>
+<body>
+    <h1>Google Analytics Test Page</h1>
+    <p>Open browser console (F12) and check:</p>
+    <ul>
+        <li>Type: <code>typeof gtag</code> - Should return "function"</li>
+        <li>Type: <code>dataLayer</code> - Should show array with tracking data</li>
+        <li>Check Network tab for requests to googletagmanager.com</li>
+    </ul>
+    <script>
+        // Test if gtag is loaded
+        window.addEventListener('load', function() {
+            console.log('Page loaded');
+            console.log('gtag function:', typeof gtag);
+            console.log('dataLayer:', window.dataLayer);
+            
+            // Try to send a test event
+            if (typeof gtag === 'function') {
+                gtag('event', 'page_view', {
+                    'page_title': 'Test Page',
+                    'page_location': window.location.href
+                });
+                console.log('Test event sent');
+            } else {
+                console.error('gtag is not loaded!');
+            }
+        });
+    </script>
+</body>
+</html>
+
