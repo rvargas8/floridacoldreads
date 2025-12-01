@@ -92,3 +92,4 @@ Made with ❤️ from Florida
 
 **Note**: The homepage file is named `readready.html`. When hosting on GitHub Pages, you may want to rename it to `index.html` or configure GitHub Pages to use `readready.html` as the entry point.
 
+

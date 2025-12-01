@@ -101,6 +101,19 @@
             gap: 0.75rem;
             text-decoration: none;
             color: white;
+            position: relative;
+        }
+        
+        /* Disable any dropdown menus on hover */
+        .brand:hover::after,
+        .brand:hover::before {
+            display: none !important;
+        }
+        
+        .brand:hover ul,
+        .brand:hover .dropdown,
+        .brand .dropdown {
+            display: none !important;
         }
 
         .brand-icon {

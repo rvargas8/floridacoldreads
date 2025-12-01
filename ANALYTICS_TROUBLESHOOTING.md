@@ -139,3 +139,4 @@ Code location: Right after `<meta name="viewport">` in the `<head>` section.
 4. Use Tag Assistant to verify tags are firing
 5. Wait 24-48 hours for standard reports to populate
 
+
